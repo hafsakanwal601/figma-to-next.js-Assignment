@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1440px;
+    margin: 0 auto;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.links{
+  display:flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: end;
+  height: 100px;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  
+
+}
+
+.parent-link{
+  background-color: #FAF5F5;
+
+
+}
+
+.link{
+  padding-inline: 15px;
+  font: 700;
+}
+
+
+.footer{
+  display: flex;
+ flex-direction: column;
+ background-color: #FAF5F5;
+ height: 220px;
+ justify-content: center;
+ gap: 20px;
+}
+
+.iconDiv{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+}
+.text{
+  text-align: center;
+}
+
+.hero-section{
+ background-color: #FAF5F5;
+  
+}
+.container{
+  max-width: 1030px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.hero-section .main{
+  display: flex;
+  align-items: center;
+  height: 400px;
+  justify-content: space-between;
+
+}
+.hero-section .text-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+  .hero-section .text-container .main-text{
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 61px;
+  letter-spacing: 2px;
+}
+.hero-section .text-container .main-para{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23.5px;
+}
+.hero-section .resume-btn{
+  background-color: #F98585;
+  padding: 10px 20px;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.recent-post{
+background-color: #F4E2E2
+
+}
+.recent-post .heading{
+  display: flex;
+  justify-content: space-between;
+}
+.recent-post .view-all-btn{
+  color: #F98585;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32.31px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  
+} 
+.recent-post .card-heading{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.recent-post .date-text{
+font-size: 18px;
+font-weight: 400;
+
+}
+ .recent-post .paragraph{
+  font-size:16px;
+  font-weight: 400;
+ }
+  .recent-post .card{
+    background-color: #ffffff;
+    height:350px;
+    display: flex;
+    flex-direction: column;
+    width: 483px;
+    padding: 45px;
+    justify-content: space-evenly;
+  }
+
+ .recent-post .card-parent{
+display: flex;
+gap: 35px;
+  }
+
+  .recent-post .main{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .featured-section .card{
+    display: flex;
+    gap: 30px;
+    width: 75%;
+  }
+
+  .featured-section .main-heading h2{
+font-size: 22px;
+font-weight: 500px;
+  }
+
+.featured-section .card-content h1{
+  font-size: 30px;
+  font-weight: 700;
+  
+  }
+  .featured-section .card-content p{
+font-size: 18px;
+font-weight: 300;
+
+  }
+    
+
+   .featured-section .badge{
+    background-color: #F98585;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 5px 30px;
+
+   }
+   .featured-section .badge p{
+    color: #ffffff;
+    
+   }
+   .featured-section .badge-parent{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+   }
+
+   .featured-section{
+    height: 1000px;
+background-color:#FAF5F5 
+
+
+   }
+
+   .featured-section .main{
+    gap: 35px;
+    height: 900px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+   }
+
+   .featured-section .card-parent{
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+   }
+
+.featured-section .card .card-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
